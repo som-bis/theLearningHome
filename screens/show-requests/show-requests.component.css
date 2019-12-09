@@ -1,0 +1,10 @@
+.row{
+    background-image: url('/assets/images/pendingRequest.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+  }
+  
+  .col-md-7{
+      margin: 2% auto;
+  }

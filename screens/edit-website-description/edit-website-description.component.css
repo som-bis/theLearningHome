@@ -1,0 +1,14 @@
+.editdescription{
+    /* border: 2px solid black; */
+    width: 70%;
+    padding-top: 2%;
+    margin: 0 auto;
+}
+
+.full{
+    background-image: url('/assets/images/description.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    
+}

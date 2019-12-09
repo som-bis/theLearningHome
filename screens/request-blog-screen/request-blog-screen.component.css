@@ -1,0 +1,10 @@
+#register{
+    margin: 11% auto 9%;
+}
+
+.row{
+    background-image: url('/assets/images/requestBlog.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}

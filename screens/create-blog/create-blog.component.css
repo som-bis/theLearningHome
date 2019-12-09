@@ -1,0 +1,10 @@
+#register{
+    margin: 2% auto 1%;
+}
+
+.row{
+    background-image: url('/assets/images/createBlog.jpg') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
