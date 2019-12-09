@@ -1,0 +1,21 @@
+<div class="nolist" *ngIf="!list || list.length === 0">
+  <p class="nocontent">Whoops <br> No <br> Content!<br><fa-icon [icon]="faFrown"></fa-icon></p>
+</div>
+    <div class="list">
+    <div class="card" *ngFor="let blog of list">
+        <div class="card-header">
+          Requested Topic: {{blog.topic}}
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">About: {{blog.about}}</h5>
+          <p class="card-text">Requested By: {{blog.user}}</p>
+          <a  routerLink="/create" class="btn btn-primary" style="color: white;">Accept Request &nbsp; <fa-icon [icon]="faCheckCircle" class="fa-lg"></fa-icon></a> &nbsp;
+          <button id="trash" class="btn btn-danger" (click)="onDelete(blog.id)">Delete&nbsp;<i class="fa fa-trash"></i></button>
+          <br><br>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <button routerLink="/home" type="button" class="btn btn-lg  btn-danger">Cancel</button>
+  </div>
+  <br>

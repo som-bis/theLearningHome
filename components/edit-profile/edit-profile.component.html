@@ -1,0 +1,34 @@
+<div class="totaldesc">
+        <h1 class="display-4" id="topdesc">Profile</h1>
+        <img src="/assets/images/profilepic.JPG" alt="Profile Image">
+        <br>
+        <div class="descrip" *ngFor="let blog of profile">
+            <span class="pro">{{blog.name}} <fa-icon [icon]="faEdit" (click)="onEdit(blog); updateName();"></fa-icon></span><br>
+            <span class="pro">{{blog.designation}} <fa-icon [icon]="faEdit" (click)="onEdit(blog); updateDesignation();"></fa-icon></span><br>
+            <span class="pro">Contact Me : {{blog.contact}} <fa-icon [icon]="faEdit" (click)="onEdit(blog); updateContact();"></fa-icon></span>
+            <p class="desc" (click)="onEdit(blog)">{{blog.profiledesc}}</p>
+
+            <!-- <p><a class="btn text-danger" (click)="onDelete(blog.id)"><i class="fa fa-trash"></i></a></p> -->
+        </div>
+        <h5>Click on the above displayed box to edit and update your profile.</h5>
+        <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+            <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.profiledesc.id">
+            <div class="form-group" id="editinput" *ngIf="!editname">
+                <input name="name" #name="ngModel" [(ngModel)]="service.profiledesc.name" class="form-control" placeholder="Edit Name...">
+            </div>
+            <div class="form-group" id="editinput" *ngIf="!editdesignation">
+                <input name="designation" #designation="ngModel" [(ngModel)]="service.profiledesc.designation" class="form-control" placeholder="Edit Designation...">
+            </div>
+            <div class="form-group" id="editinput" *ngIf="!editcontact">
+                <input name="contact" #contact="ngModel" [(ngModel)]="service.profiledesc.contact" class="form-control" placeholder="Edit Contact...">
+            </div><br>
+            <div class="form-group" id="editinput" >
+                <textarea cols="40" rows="5" name="profiledesc"  #profiledesc="ngModel" [(ngModel)]="service.profiledesc.profiledesc" class="form-control" placeholder="Say Something..." required></textarea>
+            </div>
+            <div *ngIf="profiledesc.invalid && profiledesc.touched" class="alert alert-danger" role="alert">Please enter a Description for your website.</div>
+            <div class="form-group" id="editdesc">
+                <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Update</button>
+                <button routerLink="/home" type="button" class="btn btn-lg btn-block btn-danger">Cancel</button>
+            </div>
+        </form>
+        </div>

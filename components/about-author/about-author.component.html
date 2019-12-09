@@ -1,0 +1,14 @@
+<div class="totaldesc">
+        <h1 class="display-4" id="topdesc">Profile</h1>
+        <img src="/assets/images/profilepic.JPG" alt="Profile Image">
+        <br>
+        <div class="descrip" *ngFor="let blog of profile">
+            <span class="pro">{{blog.name}}</span><br>
+            <span class="pro">{{blog.designation}}</span><br>
+            <span class="pro">Contact Me : {{blog.contact}}</span>
+            <p class="desc" (click)="onEdit(blog)">{{blog.profiledesc}}</p>
+            <button type="button" routerLink="/user" class="btn btn-lg btn-danger">Go Back</button>
+
+            <!-- <p><a class="btn text-danger" (click)="onDelete(blog.id)"><i class="fa fa-trash"></i></a></p> -->
+        </div>
+        </div>

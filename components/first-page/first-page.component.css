@@ -1,0 +1,7 @@
+.first{
+    padding-top: 5%;
+}
+
+.mat-tab-label:last-child {
+    margin-left: auto; 
+  }

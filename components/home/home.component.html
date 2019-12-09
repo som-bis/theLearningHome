@@ -1,0 +1,63 @@
+<div class="jumbotron">
+  <h1 class="display-4">Welcome Braja!  <fa-icon [icon]="faSmileBeam"></fa-icon></h1>
+  <p class="lead">‘Any fool can know. The point is to understand.’ –Albert Einstein</p>
+  <hr class="my-4">
+  <p>Let's get you started in this world of infinite possibilities.<span id="signout" routerLink="/">Not You? Sign out.</span></p>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-xs-12">
+    <a class="btn btn-primary btn-lg" routerLink="/editdescription" role="button">Edit Website Description <fa-icon [icon]="faGlobe"></fa-icon></a>
+    </div>
+    <div class="col-lg-6 col-md-6 col-xs-12">
+    <a class="btn btn-primary btn-lg" routerLink="/editprofile" role="button" id="about">Edit Your Profile  <fa-icon [icon]="faUserEdit"></fa-icon></a>
+    </div>
+    </div>
+</div>
+<div class="header">
+  <h1 >What will you be doing today <fa-icon [icon]="faQuestion"></fa-icon></h1>
+</div>
+<div class="row">
+  <div class="col-lg-3 col-md-3 col-xs-12">
+<div class="card" id="first" style="width: 18rem;">
+    <img class="card-img-top" id="firstimg" src="assets/images/create.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Create a New Blog.</h5>
+      <p class="card-text">Anything interesting of late? Let's get rolling..</p>
+      <a routerLink="/create" class="btn btn-primary task" >Create <i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-3 col-xs-12">
+  <div class="card" id="second" style="width: 18rem;">
+      <img class="card-img-top" id="thirdimg" src="assets/images/Blogs.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Show Existing Blogs.</h5>
+        <p class="card-text">Reveal the masterpieces you have created.</p>
+        <a routerLink="/show" class="btn btn-primary task" >Let's Go <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-xs-12">
+    <div class="card" id="third" style="width: 18rem;">
+      <img class="card-img-top" id="thirdimg" src="assets/images/Requests.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Show Pending Request.</h5>
+        <p class="card-text">Hear the voice of the common folks.</p>
+        <a routerLink="/showrequests" class="btn btn-primary task" >Show Requests <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-3 col-xs-12">
+    <div class="card" id="third" style="width: 18rem;">
+      <img class="card-img-top" id="thirdimg" src="assets/images/upload.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Insert New Image.</h5>
+        <p class="card-text">Stock up your image collections.Let's Upload !</p>
+        <a routerLink="/uploadimages" class="btn btn-primary task" >Upload Images <i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>
+      </div>
+      </div>
+  </div>
+  </div>
+  <br>
+
+  
+

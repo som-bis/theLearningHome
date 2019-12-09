@@ -1,0 +1,63 @@
+.header{
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+}
+
+#first{
+    margin-left: 22%;
+}
+
+#second{
+    margin-left: 5%;
+}
+
+#signout{
+    float: right;
+    text-decoration: underline;
+}
+
+#signout:hover{
+    cursor: pointer;
+}
+
+.task{
+    margin-left: 25%;
+}
+
+.tasks{
+    margin-top: 3%;
+}
+
+.fa{
+    margin-left: 2%;
+}
+
+.card-img-top{
+    height: 30%;
+    width: 100%;
+}
+
+#usrbtn{
+    width: 50%;
+}
+
+#blogger{
+    padding: 2% 25%;
+}
+
+#bloggers{
+    padding: 2% 24.2%;
+    margin-bottom: 1%;
+}
+
+#about{
+    float: right;
+}
+
+.jumbotron{
+    background-image: radial-gradient(circle 248px at center, #16d9e3 0%, #30c7ec 47%, #46aef7 100%);
+}
+

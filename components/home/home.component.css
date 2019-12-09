@@ -1,0 +1,67 @@
+.header{
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+}
+
+#signout{
+    float: right;
+    text-decoration: underline;
+}
+
+#signout:hover{
+    cursor: pointer;
+}
+
+#about{
+   float: right;
+}
+
+#first{
+    margin-left: 15%;
+}
+
+#second{
+    margin-left: 5%;
+}
+
+#third{
+    margin-left: 5%;
+}
+
+.task{
+    margin-left: 25%;
+}
+
+.tasks{
+    margin: 0 auto;
+}
+
+.fa{
+    margin-left: 2%;
+}
+
+#thirdimg{
+width: 100%;
+height: 70%;
+}
+
+#secondimg{
+    width: 100%;
+    height: 80%;
+}
+
+
+/* card-img-top{
+    object-fit: cover; /*this makes de image in src fit to the size of specified below*/
+  /* width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+  /* height: 80%;
+} */
+
+.jumbotron{
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    color: white;
+}
+

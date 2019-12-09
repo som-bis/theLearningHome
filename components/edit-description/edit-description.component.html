@@ -1,0 +1,34 @@
+<div class="totaldesc">
+<h1 class="display-4" id="topdesc">Description</h1>
+    <div class="descrip" *ngFor="let blog of description">
+        <p class="desc" (click)="onEdit(blog)">{{blog.websitedesc}}</p>
+    </div>
+<!-- <div class="group" *ngIf="description">
+<div class="descrip" *ngFor="let blog of description" (Click)="editDesc(blog)">
+    <div *ngIf="!selectedDescription">
+        <p class="desc" (click)="onEdit(blog)">{{blog.websitedesc}}</p>
+        <p><a class="btn text-danger" (click)="onDelete(blog.id)"><i class="fa fa-trash"></i></a></p>
+    </div>
+    <div *ngIf="selectedDescription">
+        <div *ngIf="blog.id !== selecteddescription.id">
+            <p class="desc" (click)="onEdit(blog)">{{blog.websitedesc}}</p>
+        </div>
+        <div *ngIf="blog.id === selecteddescription.id">
+  <app-description-edit [selecteddescription]="selecteddescription"
+  (senddescriptionToListEvent)="senddescriptionToListEventHandler($event)"></app-description-edit> 
+        </div>
+    </div>
+</div> -->
+<h5>Click on the above displayed box to edit and update the description.</h5>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)" >
+    <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.webDesc.id">
+    <div class="form-group" id="editinput">
+        <textarea cols="40" rows="5" name="websitedesc"  #websitedesc="ngModel" [(ngModel)]="service.webDesc.websitedesc" class="form-control" placeholder="Say Something..." required></textarea>
+    </div>
+    <div *ngIf="websitedesc.invalid && websitedesc.touched" class="alert alert-danger" role="alert">Please enter a Description for your website.</div>
+    <div class="form-group" id="editdesc">
+        <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">Update</button>
+        <button routerLink="/home" type="button" class="btn btn-lg btn-block btn-danger">Cancel</button>
+    </div>
+</form>
+</div>

@@ -1,0 +1,25 @@
+<div class="nolist" *ngIf="!list || list.length === 0">
+  <p class="nocontent">Whoops <br> No <br> Content!<br><fa-icon [icon]="faFrown"></fa-icon></p>
+</div>
+<div class="list" *ngIf="list || list.length > 0">
+<div class="card" *ngFor="let blog of list">
+    <div class="card-header">
+      {{blog.title}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{blog.author}}</h5>
+      <p class="card-text">{{blog.about}}</p>
+      <a  class="btn btn-primary" style="color: white;" (click)="toggleDesc(blog.id); showDesc(blog.title,blog.description)">See More</a>
+      <button id="trash" class="btn btn-danger" (click)="onDelete(blog.id)">Delete&nbsp;<i class="fa fa-trash"></i></button>
+      <br><br>
+      <div *ngIf="showVar == blog.id && descClose" class="blog-desc">
+          <a id="caption"  (click)="onCaptionClicked(blog.caption)">Refer Picture</a><br><br>{{blog.description}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper">
+    <button routerLink="/home" type="button" class="btn btn-lg  btn-danger">Cancel</button>
+</div>
+<br>
+

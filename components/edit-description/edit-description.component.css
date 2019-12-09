@@ -1,0 +1,44 @@
+.desc{
+    border: 1px solid black;
+    padding: 5%;
+    background: white;
+    color: black;
+    font-weight: 500;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.desc:hover{
+    cursor: pointer;
+}
+
+.display-4{
+    text-align: center;
+}
+
+.totaldesc{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+}
+
+.descrip{
+   margin: auto 5%;
+}
+
+#editdesc{
+    width: 25%;
+    margin: 0 auto;
+}
+
+#editinput{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+h5{
+    text-align: center;
+    margin-bottom: 1%;
+}
+

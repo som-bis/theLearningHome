@@ -1,0 +1,9 @@
+<div class="totaldesc">
+        <h1 class="display-4" id="topdesc">Description</h1>
+        <div class="descrip" *ngFor="let blog of description">
+            <p class="desc">{{blog.websitedesc}}</p>
+        </div>
+        <div class="wrapper">
+            <button routerLink="/user" type="button" class="btn btn-lg  btn-danger">Cancel</button>
+        </div>
+</div>

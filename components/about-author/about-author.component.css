@@ -1,0 +1,65 @@
+.desc{
+    border: 1px solid black;
+    padding: 5%;
+    background: white;
+    color: black;
+    font-weight: 500;
+    margin-top: 1%;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.inline-img {
+    display: inline;
+    margin: 0 0.125em;
+    padding: 0;
+    vertical-align: baseline;
+  }
+
+.desc:hover{
+    cursor: pointer;
+}
+
+/* .pro{
+    margin-left: 25%;
+} */
+
+.display-4{
+    text-align: center;
+}
+
+.totaldesc{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: white;
+}
+
+.descrip{
+   margin: auto 5%;
+   text-align: center;
+}
+
+#editdesc{
+    width: 25%;
+    margin: 0 auto;
+}
+
+#editinput{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+
+h5{
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    border-radius: 35%;
+}
+

@@ -1,0 +1,42 @@
+.card-header{
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    color: white;
+}
+
+.card{
+   margin: 2% auto;
+    
+}
+
+.nocontent{
+    text-align: center;
+    color: white;
+    font-size: 500%;
+    margin-top: 14%;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+#trash{
+    float: right;
+}
+
+.blog-desc{
+    border: 1px solid black;
+    padding : 5%;
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+}
+
+.card-title{
+    white-space: pre-wrap;
+}

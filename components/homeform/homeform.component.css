@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.btn-default {
+    color: white;
+    background-color: blue;
+  
+  }
+  
+  .btn-change {
+    color: Red;
+    background-color: white;
+  }
+
+  .editblogs{
+    background: white;
+  }
+
+  

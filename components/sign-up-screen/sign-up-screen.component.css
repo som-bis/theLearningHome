@@ -1,0 +1,19 @@
+#signup{
+    width: 30%;
+    margin-left: 35%;
+    border: 1px solid black;
+    margin-top: 5%;
+}
+
+input{
+    width: 100%;
+}
+
+h3{
+    padding-top: 2%;
+    text-align: center;
+}
+
+#bttn{
+    margin-bottom: 5%;
+}

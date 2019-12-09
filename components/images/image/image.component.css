@@ -1,0 +1,17 @@
+.card{
+    margin: 0 auto;
+    margin-left: 50%;
+}
+
+.img-fluid{
+    height: 300px;
+    width: 1200px;
+}
+
+h4 .imagebox-desc{
+ text-align: center;
+ background: white;   
+}
+
+
+
